@@ -1,0 +1,27 @@
+import fs from 'fs'
+let handler = async (m, { conn, args, command }) => {
+await conn.sendMessage(m.chat, {
+          react: {
+            text: '💀',
+            key: m.key,
+          }})
+conn.reply(m.chat, '☄️ _*please wait*_', m)
+let totalf = Object.values(global.plugins).filter(
+    (v) => v.help && v.tags
+  ).length;
+ await conn.sendButton(m.chat, `⫹⫺══┅┅─⫹⫺ *Bot WhatsApp* ⫹⫺─┅┅══⫹⫺\n\nallo *${await conn.getName(m.sender)}*`, nomorown4 + '\n\n' + wm3 + '\n\n' + botdate, thumbdoc, [['MENU','.tesm'],['OWNER','.owner'],['REPORT','.report']], m, {
+contextInfo: { externalAdReply :{
+                        mediaUrl: '',
+                        mediaType: 2,
+                        description: 'anu',
+                        title: wm2,
+                        body: 'jangan lupa untuk berlangganan agar developer semakin semangat',          previewType: 0,
+                        thumbnail: fs.readFileSync("./thumbnail.jpg"),
+                        sourceUrl: syt
+                      }}
+})
+}
+handler.help = ['totalfitur']
+handler.tags = ['info']
+handler.command = /^(menu|help|co)$/i
+export default handler
