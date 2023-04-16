@@ -1,0 +1,13 @@
+[core]
+	repositoryformatversion = 0
+	filemode = false
+	bare = false
+	logallrefupdates = true
+	symlinks = false
+	ignorecase = true
+[remote "oorigin"]
+	url = https://github.com/R1ZAL-118/botlocok.git
+	fetch = +refs/heads/*:refs/remotes/oorigin/*
+[remote "origin"]
+	url = https://github.com/R1ZAL-118/botlocok.git
+	fetch = +refs/heads/*:refs/remotes/origin/*
